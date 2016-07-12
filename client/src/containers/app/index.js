@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
+import { Player } from '../player';
+
 export class App extends Component {
   constructor (props) {
     super(props);
@@ -9,14 +11,14 @@ export class App extends Component {
   render () {
     return (
       <div className='app'>
-        {this.props.children}
+        <Player />
       </div>
     );
   }
 };
 
 App.PropTypes = {
-  children: PropTypes.array
+
 };
 
 function mapStateToProps (state) {
