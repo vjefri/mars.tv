@@ -1,7 +1,7 @@
 {
-  "name": "reactExpressStarter",
+  "name": "Mars.tv",
   "version": "0.0.1",
-  "description": "",
+  "description": "A pluto.tv clone",
   "main": "index.js",
   "scripts": {
     "start:prod": "node --harmony app.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/imbrian/reactExpressStarter.git"
+    "url": "git+https://github.com/vjefri/mars.tv.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/imbrian/reactExpressStarter/issues"
+    "url": "https://github.com/vjefri/mars.tv/issues"
   },
-  "homepage": "https://github.com/imbrian/reactExpressStarter#readme",
+  "homepage": "https://github.com/vjefri/mars.tv#readme",
   "dependencies": {
     "axios": "^0.12.0",
     "babel-core": "^6.9.0",
