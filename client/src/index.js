@@ -5,6 +5,8 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import storeConfig from './store';
 import './styles/main.scss';
 
+import App from './components/app/app';
+
 const store = storeConfig();
 
 render(
