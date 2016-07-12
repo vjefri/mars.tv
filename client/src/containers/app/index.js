@@ -2,29 +2,29 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
 export class App extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
   }
 
-  render() {
+  render () {
     return (
-      <div className="app">
+      <div className='app'>
         {this.props.children}
       </div>
     );
   }
-}
+};
 
 App.PropTypes = {
   children: PropTypes.array
 };
 
-function mapStateToProps(state) {
+function mapStateToProps (state) {
   return {};
 }
 
-function mapDispatchToProps(dispatch) {
+function mapDispatchToProps (dispatch) {
   return {};
 }
 
-export default connect(mapStateToProps,  mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
