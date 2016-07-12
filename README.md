@@ -1,4 +1,4 @@
-#React + Express Starter
+#Mars.tv
 
 ##Getting Started
 
