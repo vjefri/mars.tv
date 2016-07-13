@@ -5,29 +5,31 @@ import Moment from 'moment';
 export default class Clock extends Component {
   constructor (props) {
     super(props);
-    this.state = {
-      timestamp: Date.now()
-    };
-    this.tick = this.tick.bind(this);
+
+    var dateObj = this.setTime();
+
+    this.state = {date: dateObj.date, time: dateObj.time};
+    setInterval(this.clock.bind(this), 1000);
   }
 
-  tick () {
-    this.setState({
-      timestamp: this.state.timestamp + 1
-    });
+  setTime () {
+    let timestamp = new Date();
+    let date = Moment(timestamp).format('ddd M' + '/' + 'D');
+    let time = Moment(timestamp).format('h:mm a');
+    return {date: date, time: time};
   }
 
-  componentDidMount () {
-    setInterval(this.tick, 1000);
+  clock () {
+    var dateObj = this.setTime();
+
+    this.setState({ date: dateObj.date, time: dateObj.time });
   }
 
   render () {
-    const date = Moment(this.state.timestamp).format('ddd M' + '/' + 'D').toString();
-    const time = Moment(this.state.timestamp).format('h:mm:ss a').toString();
     return (
-      <div className='clock'>
-        <span className='range'>{date}</span>
-        {time}
+      <div className='text-center'>
+        <h1>{this.state.date}</h1>
+        <h1>{this.state.time}</h1>
       </div>
     );
   }
