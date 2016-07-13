@@ -48,17 +48,8 @@ export class Player extends Component {
   }
   render () {
     return (
-      <div>
+      <div className='video-main'>
         <YouTube videoId={this.state.videoId} opts={this.state.opts} onReady={this.onReady} />
-        <button onClick={this.onPlayVideo}>
-          Play
-        </button>
-        <button onClick={this.onPauseVideo}>
-          Pause
-        </button>
-        <button onClick={this.onChangeVideo}>
-          Change Video
-        </button>
       </div>
     );
   }

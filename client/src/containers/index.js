@@ -1,7 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import { Player } from '../player';
+import { Player } from './player';
+import Guide from './guide';
 
 export class App extends Component {
   constructor (props) {
@@ -12,6 +13,7 @@ export class App extends Component {
     return (
       <div className='app'>
         <Player />
+        <Guide />
       </div>
     );
   }
