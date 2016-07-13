@@ -18,16 +18,12 @@ export default class Clock extends Component {
   }
 
   componentDidMount () {
-    this.interval = setInterval(this.tick, 1000);
-  }
-
-  componentWillUnmount () {
-    clearInterval(this.interval);
+    setInterval(this.tick, 1000);
   }
 
   render () {
     const date = Moment(this.state.timestamp).format('ddd M' + '/' + 'D').toString();
-    const time = Moment(this.state.timestamp).format('h:mm a').toString();
+    const time = Moment(this.state.timestamp).format('h:mm:ss a').toString();
     return (
       <div className='clock'>
         <span className='range'>{date}</span>

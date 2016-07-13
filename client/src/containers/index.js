@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import { Player } from './player';
 import Guide from './guide';
+import VideoSidebar from './videoSidebar';
 
 export class App extends Component {
   constructor (props) {
@@ -14,6 +15,7 @@ export class App extends Component {
       <div className='app'>
         <Player />
         <Guide />
+        <VideoSidebar />
       </div>
     );
   }

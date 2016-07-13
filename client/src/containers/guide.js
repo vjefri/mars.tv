@@ -2,8 +2,9 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
 import Clock from '../components/guide/clock';
+import AllListings from '../components/guide/allListings';
 
-export class App extends Component {
+export class Guide extends Component {
   constructor (props) {
     super(props);
   }
@@ -23,7 +24,9 @@ export class App extends Component {
           </div>
           <div className='guide-scroller'>
             <div className='guide-viewport'>
-              <div className='left'></div>
+              <div className='left'>
+                <AllListings />
+              </div>
               <div className='right'></div>
               <div className='footer'></div>
             </div>
@@ -34,7 +37,7 @@ export class App extends Component {
   }
 };
 
-App.PropTypes = {
+Guide.PropTypes = {
 
 };
 
@@ -46,4 +49,4 @@ function mapDispatchToProps (dispatch) {
   return {};
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(Guide);
