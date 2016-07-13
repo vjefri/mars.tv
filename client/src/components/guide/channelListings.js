@@ -6,8 +6,8 @@ import ChannelListing from './channelListing';
 const ChannelListings = props => (
   <div className={props.left}>
     {_.map(props.categories, (category, key) => (
-       <div className='category' key={key}>
-         <div>
+       <div key={key}>
+         <div className='category'>
            {category}
          </div>
          <ChannelListing channel={props.data[category]} />
