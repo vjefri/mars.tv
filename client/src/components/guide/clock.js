@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import _ from 'lodash'
 import Moment from 'moment';
 
 export default class Clock extends Component {
@@ -27,9 +26,13 @@ export default class Clock extends Component {
 
   render () {
     return (
-      <div className='text-center'>
-        <h1>{this.state.date}</h1>
-        <h1>{this.state.time}</h1>
+      <div className='current-time'>
+        <p>
+          {this.state.date}
+        </p>
+        <p>
+          {this.state.time}
+        </p>
       </div>
     );
   }
