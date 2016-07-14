@@ -1,0 +1,107 @@
+.guide-scroller {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow-y: visible;
+  overflow-x: hidden;
+  .guide-viewport {
+    overflow: scroll;
+    max-height: 300px;
+    display: flex;
+    font-size: 20px;
+    .left {
+      position: relative;
+      display: inline-block;
+      width: 280px;
+      margin-right: -280px;
+      vertical-align: top;
+      z-index: 110;
+    }
+    .right {
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 280px;
+      width: 100%;
+      z-index: 5;
+    }
+  }
+}
+
+.channel-info {
+  display: flex;
+  color: #fff;
+  cursor: pointer;
+  background: #115164;
+  box-shadow: inset 0 -1px 0 0 rgba(51, 51, 51, 0.33);
+  height: 56px;
+  position: relative;
+  .channel-name {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 15px 0 0;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 190px
+  }
+  .number {
+    text-align: center;
+    width: 90px;
+    padding: 0 15px;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.listing {
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
+  .row {
+    background: #1e242c;
+    color: #49576c;
+    height: 56px;
+    line-height: 56px;
+  }
+}
+
+.queue {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  box-shadow: inset 1px 1px 0 0 rgba(73, 87, 108, 0.27);
+}
+
+.category {
+  background-color: #313841;
+  color: #fafafa;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  padding-left: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.episode {
+  max-height: 45px;
+  overflow: hidden;
+  box-shadow: inset 1px 1px 0 0 rgba(73, 87, 108, 0.27);
+  .inner-timeline {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    min-width: 20px;
+    padding: 0px 20px;
+  }
+}
