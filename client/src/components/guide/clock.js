@@ -27,12 +27,8 @@ export default class Clock extends Component {
   render () {
     return (
       <div className='current-time'>
-        <p>
-          {this.state.date}
-        </p>
-        <p>
-          {this.state.time}
-        </p>
+        <span className='range'>{this.state.date}</span>
+        {this.state.time}
       </div>
     );
   }
