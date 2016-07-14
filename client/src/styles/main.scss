@@ -1,7 +1,10 @@
 @import 'bourbon';
 @import 'neat';
 
+@import 'core/_header.scss';
+@import 'guide/_header.scss';
+@import 'guide/_viewport.scss';
+
 * {
   font-family: 'Avenir Next', 'Helvetica Neue', Helvetica;
-  box-sizing: border-box;
 }
