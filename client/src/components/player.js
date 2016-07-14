@@ -4,7 +4,6 @@ import YouTube from 'react-youtube';
 const Player = props => {
   return (
     <div className='video-main'>
-      {console.log('inside', this)}
       <YouTube videoId={props.videoId} /> } }
     </div>
   );

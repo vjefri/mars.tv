@@ -2,12 +2,14 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
 import Clock from '../components/guide/clock';
-import AllListings from '../components/guide/allListings';
+import ChannelListings from '../components/guide/channelListings';
+import EpisodeListings from '../components/guide/episodeListings';
+
+import { updateVideo } from '../actions/player';
+
+import Data from '../database/data';
 
 export class Guide extends Component {
-  constructor (props) {
-    super(props);
-  }
 
   render () {
     return (
@@ -24,10 +26,12 @@ export class Guide extends Component {
           </div>
           <div className='guide-scroller'>
             <div className='guide-viewport'>
-              <div className='left'>
-                <AllListings />
-              </div>
-              <div className='right'></div>
+              <ChannelListings left='left' categories={Object.keys(Data)} data={Data} />
+              <EpisodeListings
+                right='right'
+                updateVideo={this.props.updateVideo}
+                categories={Object.keys(Data)}
+                data={Data} />
               <div className='footer'></div>
             </div>
           </div>
@@ -37,16 +41,10 @@ export class Guide extends Component {
   }
 };
 
-Guide.PropTypes = {
-
-};
-
 function mapStateToProps (state) {
-  return {};
+  return {
+    state: state
+  };
 }
 
-function mapDispatchToProps (dispatch) {
-  return {};
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Guide);
+export default connect(mapStateToProps, {updateVideo: updateVideo})(Guide);
