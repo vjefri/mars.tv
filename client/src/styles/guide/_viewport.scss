@@ -1,3 +1,12 @@
+.mars-guide {
+  transition: width 250ms ease-in;
+  background: #252525;
+  bottom: 0;
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+}
+
 .guide-scroller {
   display: block;
   width: 100%;
@@ -6,7 +15,7 @@
   overflow-x: hidden;
   .guide-viewport {
     overflow: scroll;
-    max-height: 300px;
+    max-height: 340px;
     display: flex;
     font-size: 20px;
     .left {
