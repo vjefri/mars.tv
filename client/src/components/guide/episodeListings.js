@@ -10,7 +10,7 @@ const EpisodeListings = props => (
          <div className='category'></div>
          <EpisodeListing updateVideo={props.updateVideo} channel={props.data[category]} />
        </div>
-     ))} }
+     ))}
   </div>
 );
 
