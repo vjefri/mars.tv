@@ -1,8 +1,14 @@
 import * as ACTIONS from '../constants/';
 
 const INITIAL_STATE = {
-  episode: {},
-  channel: {}
+  episode: {
+    'videoId': '2O6PZx5KlIA',
+    'title': 'Game of Thrones S6E09 Explained',
+    'runtime': 30,
+    'start': 17,
+    'end': 18
+  },
+  channel: { 'channelName': 'AltShiftX' }
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -18,4 +24,3 @@ export default (state = INITIAL_STATE, action) => {
       return state;
   }
 };
-
