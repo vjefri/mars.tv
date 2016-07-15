@@ -8,7 +8,7 @@ const EpisodeListings = props => (
     {_.map(props.categories, (category, key) => (
        <div key={key}>
          <div className='category'></div>
-         <EpisodeListing updateVideo={props.updateVideo} channel={props.data[category]} />
+         <EpisodeListing updateVideo={props.updateVideo} updateEpisode={props.updateEpisode} channel={props.data[category]} />
        </div>
      ))}
   </div>

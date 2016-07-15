@@ -3,13 +3,36 @@
   zoom: 1;
   -moz-transition: right 250ms ease-in;
   transition: right 250ms ease-in;
-  background: #565692;
+  background: #516371;
   bottom: 0;
-  color: #000;
   height: 50vh;
   line-height: 1.5em;
   position: absolute;
   right: 0;
   width: 214.4px;
   z-index: 5;
+  color: #fff;
+  .header {
+    font-size: 25px;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 15px;
+    .channel-title {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 56px;
+      margin: 0;
+    }
+  }
+  .content {
+    display: inherit !important;
+    padding: 15px;
+    .episode-title {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.1;
+      margin: 15px 0;
+      text-shadow: -1px 0 #000;
+    }
+  }
 }

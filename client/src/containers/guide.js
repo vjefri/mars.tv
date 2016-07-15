@@ -6,6 +6,7 @@ import ChannelListings from '../components/guide/channelListings';
 import EpisodeListings from '../components/guide/episodeListings';
 
 import { updateVideo } from '../actions/player';
+import { updateEpisode } from '../actions/';
 
 import Data from '../database/data';
 
@@ -30,6 +31,7 @@ export class Guide extends Component {
               <EpisodeListings
                 right='right'
                 updateVideo={this.props.updateVideo}
+                updateEpisode={this.props.updateEpisode}
                 categories={Object.keys(Data)}
                 data={Data} />
               <div className='footer'></div>
@@ -47,4 +49,4 @@ function mapStateToProps (state) {
   };
 }
 
-export default connect(mapStateToProps, {updateVideo: updateVideo})(Guide);
+export default connect(mapStateToProps, {updateEpisode: updateEpisode, updateVideo: updateVideo})(Guide);
