@@ -22,7 +22,7 @@ export class VideoSidebar extends Component {
           </div>
         </div>
       </section>
-    );
+      );
   }
 };
 
