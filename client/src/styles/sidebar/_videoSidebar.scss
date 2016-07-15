@@ -1,0 +1,16 @@
+.video-sidebar {
+  display: block;
+  zoom: 1;
+  -webkit-transition: right 250ms ease-in;
+  -moz-transition: right 250ms ease-in;
+  transition: right 250ms ease-in;
+  background: blue;
+  bottom: 0;
+  color: #000;
+  height: 50vh;
+  line-height: 1.5em;
+  position: absolute;
+  right: 0;
+  width: 214.4px;
+  z-index: 5;
+}
