@@ -8,12 +8,11 @@ export class VideoSidebar extends Component {
 
   render () {
     return (
-      <div className='video-sidebar'>
-      </div>
+      <section className='video-sidebar'>
+      </section>
     );
   }
 };
-
 
 VideoSidebar.PropTypes = {
 

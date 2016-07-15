@@ -13,7 +13,7 @@ export class Guide extends Component {
 
   render () {
     return (
-      <div className='mars-guide'>
+      <section className='mars-guide'>
         <div className='guide-pane'>
           <div className='guide-header'>
             <div className='timeline'>
@@ -36,7 +36,7 @@ export class Guide extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 };

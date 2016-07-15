@@ -3,11 +3,11 @@ import YouTube from 'react-youtube';
 
 const Player = props => {
   return (
-    <div className='video-main'>
+    <section className='video-main'>
       <div className='video-player'>
         <YouTube videoId={props.videoId} />
       </div>
-    </div>
+    </section>
   );
 };
 
